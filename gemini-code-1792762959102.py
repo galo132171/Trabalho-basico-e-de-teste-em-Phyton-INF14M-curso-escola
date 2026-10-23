@@ -1,0 +1,22 @@
+# 1. Criação da lista vazia
+lista = []
+
+# Operação 1: Adicionar no final
+lista.append("Maçã")                  # ["Maçã"]
+
+# Operação 2: Adicionar em posição específica
+lista.insert(0, "Banana")             # ["Banana", "Maçã"]
+
+# Operação 3: Adicionar no final novamente
+lista.append("Laranja")               # ["Banana", "Maçã", "Laranja"]
+
+# Operação 4: Inserir em posição específica
+lista.insert(2, "Morango")            # ["Banana", "Maçã", "Morango", "Laranja"]
+
+# Operação 5: Remover por índice (removendo o último) e ajustando para 5 elementos
+lista.pop()                           # Remove "Laranja" -> ["Banana", "Maçã", "Morango"]
+lista.append("Pera")                  # Adiciona "Pera"
+lista.append("Abacaxi")               # Adiciona "Abacaxi"
+
+print(lista)
+# Resultado final: ['Banana', 'Maçã', 'Morango', 'Pera', 'Abacaxi'] (Total de 5 elementos)
